@@ -6,8 +6,8 @@
 - Lucas Wattin
 - Marin Vandelet
 ## Lien vers le projet hébergé
-- [Lien vers l’application](https://example.com)
-- Lien vers github 
+- [Lien vers l’application](https://forart.alwaysdata.net/)
+- [Lien vers github](https://github.com/MarinVandelet/For-Art)
 ## Description
 Décrivez brièvement le travail réalisé et sa finalité.
 ## Conduite de projet
