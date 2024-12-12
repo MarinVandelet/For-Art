@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($user && password_verify($password, $user['password'])) {
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
-                header("Location: index.php");
+                header("Location: ../index.php");
                 exit;
             } else {
                 $error = "Nom d'utilisateur ou mot de passe incorrect.";
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="../index.php">
             <img src="../image/logoblanc.png" alt="Logo For'Art" width="50">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.php">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link" href="categories.php">Catégories</a></li>
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <li class="nav-item">
